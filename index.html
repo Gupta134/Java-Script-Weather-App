@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="src/js/script.js"></script>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/quoteSection.css" />
+    <link rel="stylesheet" href="src/css/cards.css">
+    <title>weather App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="src/img/icon.png" alt="logo" />
+        <p class="logo_name">weather App <span>!</span></p>
+      </div>
+      <div class="search-location">
+        <div class="input">
+          <input
+            class="search"
+            type="text"
+            name="City"
+            placeholder="Enter your city name"
+            style="color:white;"
+          />
+          <img class="search-icon" src="src/img/search-icon.png" alt="search-logo" />
+        </div>
+        <a href="#" class="get-current-location">Get Device Location</a>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="quote">
+        <div class="left-quote">
+            <img src="src/img/left-quote.png" alt="left_quote" />
+        </div>
+        <p class="quote_text">
+          A change in the weather is sufficient <br>
+          to recreate the world and <br>
+          ourselves.
+        </p>
+        <div class="right-quote">
+            <img src="src/img/right-quote.png" alt="right_quote">
+        </div>
+      </div>
+      <div class="cover-img">
+        <img src="src/img/cover-removebg.png" alt="">
+      </div>
+    </section>
+
+
+
+    <section class="weather-cards hidden ">
+        <div class="left-card">
+            <img class="weather-icon" src="src/img/clear.png" alt="icon">
+            <p class="temp">28°C</p>
+            <p class="description">Clearly</p>
+        </div>
+        <div class="right-card">
+            <div class="humidity">
+                <img src="src/img/humidity.png" alt="humid" class="humid-icon">
+                <div class="humit-container">
+                    <p class="humid-temp">28&#8451</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="min-max">
+                <img src="src/img/max-temp.png" alt="mmicon" class="icon">
+                <p class="min-max-temp">28&#8451 / 29&#8451</p>
+            </div>
+            <div class="city">
+                <img src="src/img/navigation.png" alt="city" class="city-icon">
+                <p class="city-country">Jaipur, India</p>
+            </div>
+            <button class="clear">CLEAR</button>
+        </div>
+        
+    </section>
+  </body>
+</html>

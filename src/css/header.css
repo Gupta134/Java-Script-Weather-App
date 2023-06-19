@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  font-family: "Amatic SC", cursive;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  transition: all 1s ease-out;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header .logo img {
+  width: 5vw;
+  cursor: pointer;
+}
+
+header .logo p {
+  font-weight: 700;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header .search-location {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap ;
+ 
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .search-location .input {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+  padding: 0.4rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header .search-location .input .search {
+  height: 4vh;
+  width: 250px;
+ 
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  caret-color: white;
+}
+
+header .search-location .input img {
+  width: 30px;
+  cursor: pointer;
+  filter: invert();
+}
+
+header .search-location .input .search::placeholder {
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .search-location a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background-color: white;
+  color: black;
+  height: 6vh;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  transition: all 0.4s ease-out;
+}
+
+header .search-location a:active{
+    transform: scale(0.8);
+}
